@@ -200,6 +200,7 @@ function openGoods(event) {
 
 }
 
+// Добавление в корзину
 function addToCart(event) {
   const target = event.target;
   const buttonAddToCart = target.closest(".button-add-cart");
@@ -228,6 +229,7 @@ function addToCart(event) {
 
 }
 
+// Формирование корзины
 function renderCart() {
   modalBody.textContent = '';
   cart.forEach(function ({ id, title, cost, count }) {
@@ -253,7 +255,7 @@ function renderCart() {
   modalPrice.textContent = totalPrice + ' ₽';
 }
 
-
+// Изменения товаров в корзине
 function changeCount(event) {
   const target = event.target;
 
@@ -274,6 +276,85 @@ function changeCount(event) {
   }
 
 }
+
+// Смена главной рекламы
+function changePromo() {
+
+  let count = 0;
+
+  function change1() {
+    containerPromo.textContent = '';
+    const promo = `
+  <section class="promo sushi">
+		<h1 class="promo-title">Сеты со скидкой до 30% <br> в ресторанах</h1>
+		<p class="promo-text">
+			Скидки на сеты до 30 мая по промокоду DADADA
+		</p>
+	</section>
+  `;
+    containerPromo.insertAdjacentHTML("beforeend", promo);
+  }
+
+  function change2() {
+    containerPromo.textContent = '';
+    const promo = `
+        <section class="promo vegetables">
+					<h1 class="promo-title">Скидка 20% на всю еду <br> по промокоду LOVE.JS</h1>
+					<p class="promo-text">
+						Блюдо из ресторана привезут вместе с двумя подарочными книгами по фронтенду
+					</p>
+				</section>
+  `;
+
+    containerPromo.insertAdjacentHTML("beforeend", promo);
+  }
+
+  function change3() {
+    containerPromo.textContent = '';
+    const promo = `
+        <section class="promo kebab">
+					<h1 class="promo-title">Шашлыки на майские <br> со скидкой 35%</h1>
+					<p class="promo-text">
+						Закажите шашлыки в любом ресторане до 10 мая и получите скидку по промокоду OMAGAD
+					</p>
+				</section>
+  `;
+    containerPromo.insertAdjacentHTML("beforeend", promo);
+  }
+
+  function change4() {
+    containerPromo.textContent = '';
+    const promo = `
+        <section class="promo pizza">
+					<h1 class="promo-title">Онлайн-сервис <br />доставки еды на дом</h1>
+					<p class="promo-text">
+						Блюда из любимого ресторана привезет курьер в перчатках, маске и с антисептиком
+					</p>
+				</section>
+  `;
+    containerPromo.insertAdjacentHTML("beforeend", promo);
+  }
+
+  change1();
+  setInterval(function () {
+    count++;
+    if (count === 5) {
+      change2();
+    }
+    if (count === 10) {
+      change3();
+    }
+    if (count === 15) {
+      change4();
+    }
+    if (count === 20) {
+      change1();
+      count = 0;
+    }
+  }, 1000);
+
+}
+
 
 function init() {
 
@@ -298,6 +379,8 @@ function init() {
   // Анимация на сайте
   new WOW().init();
 
+
+  changePromo();
   checkAuth();
 }
 
