@@ -16,8 +16,3 @@
 ### Используемые плагины/библиотеки
 ![AnimateJs](https://img.shields.io/badge/-AnimateJs-black?style=flat-square&logo=animate.js&logoColor=animate.js)
 ![WowJs](https://img.shields.io/badge/-WowJs-black?style=flat-square&logo=wow.js&logoColor=wow.js)
-
-### Запуск проекта
-```
-Разархивировать проект и запустить в IDE
-```

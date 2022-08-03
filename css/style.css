@@ -46,7 +46,7 @@ button {
 
 .input-address {
     width: 100%;
-    background-image: url(../img/icon/home.svg);
+    background-image: url(../images/icon/home.svg);
 }
 
 .search {
@@ -55,7 +55,7 @@ button {
 
 .input-search {
     width: 300px;
-    background-image: url(../img/icon/search.svg);
+    background-image: url(../images/icon/search.svg);
 
 }
 
@@ -114,8 +114,8 @@ button {
     width: 24px;
     height: 24px;
     background-color: #fff;
-    -webkit-mask: url("../img/icon/user.svg") no-repeat 50% 50%;
-    mask: url("../img/icon/user.svg") no-repeat 50% 50%;
+    -webkit-mask: url("../images/icon/user.svg") no-repeat 50% 50%;
+    mask: url("../images/icon/user.svg") no-repeat 50% 50%;
     background-repeat: no-repeat;
 }
 
@@ -127,8 +127,8 @@ button {
     width: 24px;
     height: 24px;
     background-color: #595959;
-    -webkit-mask: url("../img/icon/shopping-cart.svg") no-repeat 50% 50%;
-    mask: url("../img/icon/shopping-cart.svg") no-repeat 50% 50%;
+    -webkit-mask: url("../images/icon/shopping-cart.svg") no-repeat 50% 50%;
+    mask: url("../images/icon/shopping-cart.svg") no-repeat 50% 50%;
     background-repeat: no-repeat;
 }
 
@@ -176,19 +176,19 @@ button {
 }
 
 .pizza {
-    background: #fff1b8 url(../img/promo/pizza-promo.png) no-repeat top -100px right -250px / 730px
+    background: #fff1b8 url(../images/promo/pizza-promo.png) no-repeat top -100px right -250px / 730px
 }
 
 .kebab {
-    background: #D6E4FF url(../img/promo/kebab.png) no-repeat top 45px right 40px / 450px;
+    background: #D6E4FF url(../images/promo/kebab.png) no-repeat top 45px right 40px / 450px;
 }
 
 .vegetables {
-    background: #FFF566 url(../img/promo/vegetables.png) no-repeat top 0 right 0 / 825px
+    background: #FFF566 url(../images/promo/vegetables.png) no-repeat top 0 right 0 / 825px
 }
 
 .sushi {
-    background: #FFF1F0 url(../img/promo/sushi.png) no-repeat top 10px right 15px / 500px
+    background: #FFF1F0 url(../images/promo/sushi.png) no-repeat top 10px right 15px / 500px
 }
 
 .promo-title {
@@ -320,7 +320,7 @@ button {
 }
 
 .rating {
-    background-image: url("../img/icon/rating.svg");
+    background-image: url("../images/icon/rating.svg");
     background-repeat: no-repeat;
     background-position: 0 7px;
     padding-left: 20px;
@@ -803,8 +803,8 @@ button {
         width: 24px;
         height: 24px;
         background-color: #fff;
-        -webkit-mask: url(../img/icon/logout.svg) no-repeat 50% 50%;
-        mask: url(../img/icon/logout.svg) no-repeat 50% 50%;
+        -webkit-mask: url(../images/icon/logout.svg) no-repeat 50% 50%;
+        mask: url(../images/icon/logout.svg) no-repeat 50% 50%;
         background-repeat: no-repeat;
         -webkit-mask-size: 20px;
         mask-size: 20px;
